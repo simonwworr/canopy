@@ -24,8 +24,8 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:50832/v1/health"]
       interval: 30s
       timeout: 10s
-      retries: 5
-      start_period: 30s
+      retries: 3
+      start_period: 60s
 
   # Auto-update service (optional, enable by overriding the profile)
   auto-update:
