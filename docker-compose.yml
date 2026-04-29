@@ -16,7 +16,7 @@ services:
       - canopy-data:/root/.canopy
       - ./config:/root/.canopy/config:ro
     environment:
-      - LOG_LEVEL=${LOG_LEVEL:-debug}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
       - NETWORK_ID=${NETWORK_ID:-1}
     networks:
       - canopy-net
